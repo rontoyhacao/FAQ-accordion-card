@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 .attribution {
+  position: absolute;
+  bottom: 1rem;
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 
 .attribution .attribution a {
