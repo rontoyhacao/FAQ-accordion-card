@@ -136,24 +136,38 @@ body {
   line-height: 20px;
 }
 
-@media (min-width: 280px) and (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 812px) {
   .wrapper {
+    height: 550px;
     margin: 20px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: 'image-wrapper' 'accordion-wrapper';
   }
+  .wrapper .image-wrapper {
+    height: 120px;
+  }
   .wrapper .image-wrapper .image-wrapper-inner {
-    display: none;
+    position: absolute;
+    background: url(/assets/images/bg-pattern-mobile.svg) no-repeat;
+    background-position-x: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 300px;
+    width: 300px;
   }
   .wrapper .image-wrapper .box {
     background: url(/assets/images/illustration-woman-online-mobile.svg) no-repeat;
     top: -105px;
-    left: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .wrapper .accordion-wrapper {
     font-size: 12px;
-    padding: 50px 15px 0 15px;
+    padding: 0 15px 0 15px;
+    margin-top: -50px;
   }
   .wrapper .accordion-wrapper h1 {
     text-align: center;
@@ -165,6 +179,9 @@ body {
   .wrapper .accordion-wrapper .accordion-container .accordion-item .accordion-item-body {
     font-size: 13px;
   }
+  .attribution {
+    display: none;
+  }
 }
 
 @media (width: 280px) {
@@ -173,20 +190,6 @@ body {
   }
   .wrapper .accordion-wrapper {
     padding: 20px 15px 0 15px;
-  }
-  .wrapper .image-wrapper .box {
-    top: -105px;
-    left: -27px;
-  }
-}
-
-@media (width: 375px) {
-  .wrapper .accordion-wrapper {
-    padding: 50px 15px 0 15px;
-  }
-  .wrapper .image-wrapper .box {
-    top: -105px;
-    left: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
