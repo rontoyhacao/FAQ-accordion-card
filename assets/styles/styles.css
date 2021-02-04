@@ -7,8 +7,12 @@
   color: white;
 }
 
-.attribution .attribution a {
+.attribution a {
   color: #3e52a3;
+}
+
+.attribution a:hover {
+  color: #f47c57;
 }
 
 * {
