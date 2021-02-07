@@ -109,6 +109,7 @@ body {
   width: 100%;
   text-align: left;
   font-size: 1rem;
+  background: transparent;
 }
 
 .wrapper .accordion-wrapper .accordion-container .accordion-item .accordion-item-header:focus {
