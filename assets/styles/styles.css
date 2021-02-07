@@ -98,12 +98,21 @@ body {
 }
 
 .wrapper .accordion-wrapper .accordion-container .accordion-item .accordion-item-header {
+  font-family: inherit;
   color: #4a4b5e;
   padding: 1rem 0;
   position: relative;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.wrapper .accordion-wrapper .accordion-container .accordion-item .accordion-item-header:focus {
+  outline: 1px dashed #f47c57;
 }
 
 .wrapper .accordion-wrapper .accordion-container .accordion-item .accordion-item-header::after {

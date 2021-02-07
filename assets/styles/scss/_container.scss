@@ -38,11 +38,19 @@
             .accordion-item {
                 border-bottom: 1px solid $light-grayish-blue;
                 .accordion-item-header {
+                    font-family: inherit;
                     color: $Very-dark-grayish-blue;
                     padding: 1rem 0;
                     position: relative;
                     cursor: pointer;
                     transition: all 0.2s;
+                    border: none;
+                    width: 100%;
+                    text-align: left;
+                    font-size: 1rem;
+                    &:focus {
+                        outline: 1px dashed $Soft-red;
+                    }
                     &::after {
                         content: url(/assets/images/icon-arrow-down.svg);
                         position: absolute;
